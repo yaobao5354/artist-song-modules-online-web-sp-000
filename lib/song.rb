@@ -3,8 +3,8 @@ require 'pry'
 class Song
   attr_accessor :name
   attr_reader :artist
-  extend Memorable, Findable
-  include Paramable
+  extend Test::Memorable, Test::Findable
+  include Test::Paramable
   
   @@songs = []
 
